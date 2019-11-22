@@ -44,7 +44,7 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 0 0 1em 0;
   color: #222;
   font-family: Roboto, Helvetica, sans-serif;
   font-weight: 700;
@@ -278,6 +278,10 @@ body {
  * USER STYLES
  *********************************************/
 
+ul > li {
+  margin-bottom: 0.5em;
+}
+
 .reveal img {
   max-width: 60%;
 }
@@ -348,7 +352,6 @@ body {
   box-shadow: none;
   background: transparent;
   font-size: 20px;
-  /*line-height: 0.6;*/
 }
 
   .logo--chotot img {
@@ -377,9 +380,13 @@ body {
 
 .col.col {
   width: 47%;
-  margin: 0 1%;
+  margin-right: 2%;
   display: inline-block;
   vertical-align: top;
+}
+
+.col.col:last-of-type {
+  margin-right: 0;
 }
 
 .col.col--large {
@@ -404,12 +411,18 @@ body {
 }
 
 .mobile-mockup.mobile-mockup {
-  background-image: url(../../img/n6p_front.png);
+  background-image: url(../../img/pixel3-mockup.png);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 510px;
-  height: 950px;
+  height: 1080px;
   position: relative;
+  float: right;
+}
+
+.mobile-mockup.mobile-mockup--iphone {
+  background-image: url(../../img/iphonex-mockup.png);
+  height: 1024px;
 }
 
 .mobile-mockup video,
@@ -426,6 +439,13 @@ body {
   margin: 0;
 }
 
+.left-align {
+  text-align: left;
+}
+
+.left-align > ul {
+  margin-left: 1em;
+}
 
 /*********************************************
  * PRINT BACKGROUND
