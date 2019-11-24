@@ -35,11 +35,12 @@
 <body>
 	<div class="reveal">
 		<header class="slides__header">
-			<img class="logo" src="img/logo-vws-color.png" alt="Vietnam Web Summit logo" height="40">
-			<a href="https://careers.chotot.com" class="logo logo--chotot"><img src="img/logo-chotot-text.svg" alt="Chotot Logo" height="40"></a>
+			<img class="logo" src="img/logo-vws-color.png" alt="Vietnam Web Summit logo">
+			<a href="https://careers.chotot.com" class="logo logo--chotot"><img src="img/logo-chotot-text.svg" alt="Chotot Logo"></a>
 		</header>
 		<div class="slides">
 			<section data-background="img/mobile-screen.jpg" class="dark-slide title-slide">
+				<div class="spacer"></div>
 				<h1>The Current State of<br>Progressive Web App</h1>
 				<h3>Speaker:<br>Trần Trọng Thanh</h3>
 				<p><a href="https://int3ractive.com">int3ractive.com</a> / <a href="https://facebook.com/trongthanh" target="_blank">@trongthanh</a></p>
@@ -73,8 +74,8 @@
 				<div class="col">
 					<div class="mobile-mockup mobile-mockup--iphone">
 						<video loop>
-							<source src="videos/current-app.webm" type="video/webm">
-							<source src="videos/current-app.mp4" type="video/mp4">
+							<source src="videos/pwa.webm" type="video/webm">
+							<source src="videos/pwa.mp4" type="video/mp4">
 						</video>
 					</div>
 				</div>
@@ -93,8 +94,8 @@
 			<section>
 				<h3>Web capabilities we'll explore:</h3>
 				<ul>
-					<li>Installation and fullscreen mode</li>
-					<li>Multi-tasking</li>
+					<li>Installation</li>
+					<li>Standalone and multi-tasking</li>
 					<li>Working offline</li>
 					<li>Web Share API</li>
 					<li>Payment Request API</li>
@@ -104,6 +105,8 @@
 					<li>Background sync</li>
 				</ul>
 			</section>
+
+
 
 			<section data-background="img/mobile-on-hand.jpg" class="dark-slide title-slide">
 				<h2>The End</h2>
@@ -119,6 +122,7 @@
 	<script src="js/reveal.js"></script>
 
 	<script>
+		/*global Reveal, hljs*/
 		// More info about config & dependencies:
 		// - https://github.com/hakimel/reveal.js#configuration
 		// - https://github.com/hakimel/reveal.js#dependencies
