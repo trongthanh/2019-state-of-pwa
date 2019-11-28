@@ -369,14 +369,9 @@ ul > li {
 }
 
 .col.col {
-  width: 47%;
-  margin-right: 2%;
+  width: 49%;
   display: inline-block;
   vertical-align: top;
-}
-
-.col.col:last-of-type {
-  margin-right: 0;
 }
 
 .col.col--large {
@@ -433,6 +428,7 @@ ul > li {
 
 .browsers-support-list .browsers-support-list__item {
   margin: 1em;
+  font-size: 0.6em;
 }
 
 .browser-icon {
