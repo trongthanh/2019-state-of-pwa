@@ -283,6 +283,16 @@ ul > li {
   margin-bottom: 0.5em;
 }
 
+.icon.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
 .reveal img {
   max-width: 60%;
 }
@@ -361,7 +371,7 @@ ul > li {
 }
 
 .title-slide .footnote {
-  bottom: -4em;
+  bottom: -2.5em;
 }
 
 .footnote .center {
@@ -427,12 +437,12 @@ ul > li {
 }
 
 .browsers-support-list .browsers-support-list__item {
-  margin: 1em;
+  margin: 0 0.5em;
   font-size: 0.6em;
 }
 
 .browser-icon {
-  width: 4.5em;
+  width: 6em;
   text-align: center;
 }
 
@@ -442,6 +452,54 @@ ul > li {
   box-shadow: none;
   height: 4em;
   max-width: none;
+}
+
+.browser-icon .browser-icon__status {
+  height: 0.5em;
+  background-color: #589F39;
+}
+
+.browser-icon .browser-icon__status--red {
+  background-color: #E30127;
+}
+
+.browser-icon .browser-icon__status--orange {
+  background-color: #FEB700;
+}
+
+.browsers-support {
+  display: grid;
+  grid-template-columns: 2fr 1fr 4fr;
+  width: 50%;
+  font-size: 0.65em;
+}
+
+.browsers-support--large {
+  font-size: 1em;
+  width: 70%;
+  margin: auto;
+}
+
+.browsers-support--sticky {
+  position: absolute;
+  bottom: 0;
+}
+
+.browsers-support .browsers-support__group-title {
+  margin: 0;
+  grid-row-start: 1;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+}
+
+.browsers-support .browsers-support-list {
+  grid-row-start: 2;
+  border-top: solid 4px #ccc;
+  margin: 0 0.5em;
+}
+
+.browsers-support .browser-icon {
+  width: 4.4em;
 }
 
 /*override some stupid rules*/
