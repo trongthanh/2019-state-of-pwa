@@ -294,7 +294,11 @@ ul > li {
 }
 
 .reveal img {
-  max-width: 60%;
+  max-width: 70%;
+}
+
+.col img {
+  max-width: 100%;
 }
 
 .reveal h1,
@@ -360,10 +364,12 @@ ul > li {
 
 .footnote {
   position: absolute;
-  bottom: -2em;
+  bottom: -3em;
   left: 0;
   right: 0;
   color: #777777;
+  font-style: italic;
+  font-size: 0.8em;
 }
 
 .dark-slide .footnote {
@@ -374,7 +380,7 @@ ul > li {
   bottom: -2.5em;
 }
 
-.footnote .center {
+.footnote--center {
   text-align: center;
 }
 
@@ -382,6 +388,7 @@ ul > li {
   width: 49%;
   display: inline-block;
   vertical-align: top;
+  position: relative;
 }
 
 .col.col--large {
