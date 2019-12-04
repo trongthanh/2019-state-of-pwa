@@ -20,8 +20,7 @@
 	<link rel="stylesheet" href="css/theme/white.css">
 
 	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="lib/css/monokai.css">
-	<!-- <link rel="stylesheet" href="lib/css/tomorrow.css"> -->
+	<link rel="stylesheet" href="lib/css/tomorrow.css">
 
 	<!-- Printing and PDF exports -->
 	<script>
@@ -102,22 +101,71 @@
 				</div>
 				<div class="col col--small">
 					<div class="mobile-mockup">
-						<!-- <video loop>
+						<video loop>
 							<source src="videos/pwa.webm" type="video/webm">
 							<source src="videos/pwa.mp4" type="video/mp4">
-						</video> -->
+						</video>
 					</div>
 				</div>
 			</section>
 
 			<section>
-				<h3>Minimum technical specs to be called PWA</h3>
-				<ul>
-					<li><strong>https</strong>: safe, fresh</li>
-					<li><strong>manifest.json</strong>: installable, discoverable, </li>
-					<li><strong>SPA</strong>: app-like, linkable</li>
-					<li><strong>service worker</strong>: connectivity independent, re-engageable</li>
-				</ul>
+				<section class="left-align">
+					<h3>Minimum tech specs to be called<br>Progressive Web App</h3>
+					<ul>
+						<li class="fragment"><strong>https</strong>: safe, fresh</li>
+						<li class="fragment"><strong>SPA</strong>: app-like, linkable</li>
+						<li class="fragment"><strong>manifest.json</strong>: installable, discoverable</li>
+					</ul>
+				</section>
+				<section>
+					<div class="col col--large">
+						<span>index.html</span>
+						<pre><code class="html" data-trim>
+	&lt;link rel="manifest" href="/manifest.json"&gt;
+	&lt;meta name="theme-color" content="#00796b"&gt;
+	</code></pre>
+						<span>manifest.json</span>
+						<pre><code class="json" data-trim>
+	{
+	  "short_name": "Vue Shop",
+	  "name": "Vue Shop - Mobile Shopping",
+	  "icons": [
+	    {
+	      "src": "assets/logo.png",
+	      "type": "image/png",
+	      "sizes": "192x192"
+	    }
+	  ],
+	  "start_url": "index.html",
+	  "theme_color": "#00796b",
+	  "background_color": "#b2dfdb",
+	  "display": "standalone",
+	  "orientation": "portrait"
+	}</code></pre>
+					</div>
+					<div class="col col--small">
+						<div class="mobile-mockup">
+							<img src="img/homescreen.png" alt="Android home screen">
+							<img src="img/splash-screen.png" alt="Vue shop splash screen">
+						</div>
+					</div>
+				</section>
+				<section class="left-align">
+					<ul>
+						<li><strong>https</strong>: safe, fresh</li>
+						<li><strong>SPA</strong>: app-like, linkable</li>
+						<li><strong>manifest.json</strong>: installable, discoverable</li>
+						<li><strong>service worker</strong>: connectivity independent, re-engageable</li>
+					</ul>
+				</section>
+				<section>
+					<img src="img/serviceworker-model.webp" alt="">
+					<footer class="footnote">
+					<small>Image src: <a href="https://deanhume.com/service-workers-can-save-the-environment">deanhume.com</a></small>
+				</footer>
+
+				</section>
 			</section>
 
 			<section>
@@ -189,16 +237,25 @@
 			</section>
 
 			<section>
-				<aside class="browsers-support browsers-support--large">
+				<aside class="browsers-support browsers-support--large browsers-support--has-legend">
 					<h4 class="browsers-support__group-title browsers-support__group-title--span-2">Android</h4>
+					<div class="browsers-support__legends">
+						<div class="browsers-support__label">Supported</div>
+						<div class="browsers-support__label">Limited</div>
+						<div class="browsers-support__label">Not supported</div>
+					</div>
 					<ul class="browsers-support-list">
 						<li class="browsers-support-list__item browser-icon ">
 							<img class="browser-icon__icon" src="img/chrome.svg" alt="Chrome browser">
 							<div class="browser-icon__status"></div>
+							<div class="browser-icon__status browser-icon__status--orange"></div>
+							<div class="browser-icon__status browser-icon__status--red"></div>
 						</li>
 						<li class="browsers-support-list__item browser-icon ">
 							<img class="browser-icon__icon" src="img/samsung-internet.svg" alt="Samsung Internet browser">
 							<div class="browser-icon__status"></div>
+							<div class="browser-icon__status browser-icon__status--orange"></div>
+							<div class="browser-icon__status browser-icon__status--red"></div>
 						</li>
 					</ul>
 					<h4 class="browsers-support__group-title browsers-support__group-title--span-1">iOS</h4>
@@ -206,6 +263,8 @@
 						<li class="browsers-support-list__item browser-icon ">
 							<img class="browser-icon__icon" src="img/safari.svg" alt="Safari browser">
 							<div class="browser-icon__status"></div>
+							<div class="browser-icon__status browser-icon__status--orange"></div>
+							<div class="browser-icon__status browser-icon__status--red"></div>
 						</li>
 					</ul>
 					<h4 class="browsers-support__group-title browsers-support__group-title--span-4">Desktop</h4>
@@ -213,18 +272,26 @@
 						<li class="browsers-support-list__item browser-icon ">
 							<img class="browser-icon__icon" src="img/chrome.svg" alt="Chrome browser">
 							<div class="browser-icon__status"></div>
+							<div class="browser-icon__status browser-icon__status--orange"></div>
+							<div class="browser-icon__status browser-icon__status--red"></div>
 						</li>
 						<li class="browsers-support-list__item browser-icon ">
 							<img class="browser-icon__icon" src="img/coccoc-browser.svg" alt="Coccoc browser">
 							<div class="browser-icon__status"></div>
+							<div class="browser-icon__status browser-icon__status--orange"></div>
+							<div class="browser-icon__status browser-icon__status--red"></div>
 						</li>
 						<li class="browsers-support-list__item browser-icon ">
 							<img class="browser-icon__icon" src="img/safari.svg" alt="Safari browser">
 							<div class="browser-icon__status"></div>
+							<div class="browser-icon__status browser-icon__status--orange"></div>
+							<div class="browser-icon__status browser-icon__status--red"></div>
 						</li>
 						<li class="browsers-support-list__item browser-icon ">
 							<img class="browser-icon__icon" src="img/firefox-browser.svg" alt="Firefox browser">
 							<div class="browser-icon__status"></div>
+							<div class="browser-icon__status browser-icon__status--orange"></div>
+							<div class="browser-icon__status browser-icon__status--red"></div>
 						</li>
 					</ul>
 				</aside>
@@ -272,13 +339,54 @@
 					</ul>
 				</aside>
 				<section>
-					<h4>Android</h4>
+					<div class="col col--large">
+						<div class="spacer-small"></div>
+						<h4>Android</h4>
+
+					</div>
+					<div class="col col--small">
+						<div class="mobile-mockup">
+							<video loop>
+								<source src="videos/install.webm" type="video/webm">
+								<source src="videos/install.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
 				</section>
 				<section>
-					<h4>iOS</h4>
+					<div class="col col--large">
+						<div class="spacer-small"></div>
+						<h4>iOS 13</h4>
+						<ul>
+							<li>Not support all manifest.json</li>
+							<li>No native installation banner</li>
+							<li>"Add to home screen" is hidden below the share popup</li>
+						</ul>
+					</div>
+					<div class="col col--small">
+						<div class="mobile-mockup mobile-mockup--iphone">
+							<video loop>
+								<source src="videos/install-ios.mov" type="video/quicktime">
+								<source src="videos/install-ios.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
 				</section>
 				<section>
-					<h4>Desktop</h4>
+					<div class="col col--small">
+						<div class="spacer-small"></div>
+						<h4>Desktop</h4>
+						<p>
+							From Chrome-based browsers, PWA can be installed like desktop apps.
+						</p>
+					</div>
+					<div class="col col--large">
+						<div class="image-steps">
+							<img class="" src="img/install-desktop-1.jpg" alt="">
+							<img class="fragment" src="img/install-desktop-2.jpg" alt="">
+							<img class="fragment" src="img/install-desktop-3.jpg" alt="">
+						</div>
+					</div>
 				</section>
 			</section>
 
@@ -486,7 +594,18 @@
 					<h4>iOS</h4>
 				</section>
 				<section>
-					<h4>Desktop</h4>
+
+					<div class="col col">
+						<div class="spacer-small"></div>
+						<h4>Desktop</h4>
+						<p>Only Safari on macOS support this feature.</p>
+					</div>
+					<div class="col col">
+						<video loop>
+							<source src="videos/webshare-safari-desktop.mov" type="video/quicktime">
+							<source src="videos/webshare-safari-desktop.mp4" type="video/mp4">
+						</video>
+					</div>
 				</section>
 			</section>
 
@@ -667,7 +786,14 @@
 				</section>
 
 				<section>
-					<p>To display web contents inside an Android app, there is in-app webrowser ativity</p>
+					<div class="col col--large">
+						<p>To display web contents inside an Android app, there is in-app web browser ativity</p>
+					</div>
+					<div class="col col--small">
+						<div class="mobile-mockup">
+							<img src="img/in-app-browser.png" alt="">
+						</div>
+					</div>
 				</section>
 
 				<section>
