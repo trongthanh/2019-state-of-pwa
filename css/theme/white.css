@@ -419,7 +419,7 @@ ul > li {
   float: right;
 }
 
-.mobile-mockup.mobile-mockup::before {
+.mobile-mockup.mobile-mockup::after {
   content: '';
   background-image: url(../../img/pixel3-mockup.png);
   background-size: 100%;
@@ -429,6 +429,7 @@ ul > li {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 0;
 }
 
 .mobile-mockup.mobile-mockup--iphone {
