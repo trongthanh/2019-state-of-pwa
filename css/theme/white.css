@@ -413,13 +413,22 @@ ul > li {
 }
 
 .mobile-mockup.mobile-mockup {
-  background-image: url(../../img/pixel3-mockup.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
   width: 460px;
   height: 965px;
   position: relative;
   float: right;
+}
+
+.mobile-mockup.mobile-mockup::before {
+  content: '';
+  background-image: url(../../img/pixel3-mockup.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .mobile-mockup.mobile-mockup--iphone {
@@ -454,11 +463,17 @@ ul > li {
   outline: 1px solid #000;
 }
 
-.mobile-mockup--iphone video,
-.mobile-mockup--iphone img {
-  top: 20px;
+.mobile-mockup img + .fragment {
+  left: 23px;
+  top: 68px;
+  outline: none;
 }
 
+.mobile-mockup--iphone video,
+.mobile-mockup--iphone img,
+.mobile-mockup--iphone img + .fragment {
+  top: 20px;
+}
 
 .reveal .browsers-support-list {
   margin: 0;

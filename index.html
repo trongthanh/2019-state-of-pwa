@@ -180,7 +180,7 @@
 				</section>
 				<section>
 					<p>Service Worker and Cache</p>
-					<img src="img/serviceworker-model.webp" alt="">
+					<img src="img/serviceworker-model.png" alt="">
 					<footer class="footnote">
 						Image src: <a href="https://deanhume.com/service-workers-can-save-the-environment">deanhume.com</a>
 					</footer>
@@ -318,7 +318,7 @@
 			</section>
 
 			<section>
-				<h4>Installable</h4>
+				<h3 style="width: 65%">Installable</h3>
 				<aside class="browsers-support browsers-support--sticky">
 					<h4 class="browsers-support__group-title browsers-support__group-title--span-2">Android</h4>
 					<ul class="browsers-support-list">
@@ -365,14 +365,31 @@
 						<ul>
 							<li>Fully support manifest.json</li>
 							<li>Native Install banner</li>
+							<li>Multi-tasking and intents</li>
+							<li>Share local storage and browser data</li>
 						</ul>
 					</div>
 					<div class="col col--small">
 						<div class="mobile-mockup">
 							<video loop>
-								<source src="videos/install.webm" type="video/webm">
 								<source src="videos/install.mp4" type="video/mp4">
 							</video>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="col col--large">
+						<div class="spacer-small"></div>
+						<h4>PWA vs. Web App</h4>
+						<ul>
+							<li>Web apps will not receive install banner</li>
+							<li>Browser emblem next to launcher icon</li>
+							<li>No launcher icon in app drawer</li>
+						</ul>
+					</div>
+					<div class="col col--small">
+						<div class="mobile-mockup">
+							<img src="img/homescreen-with-website-shortcut.jpg" alt="">
 						</div>
 					</div>
 				</section>
@@ -382,8 +399,9 @@
 						<h4>iOS 13</h4>
 						<ul>
 							<li>Not support all manifest.json</li>
-							<li>No native installation banner</li>
+							<li>No native install banner</li>
 							<li>"Add to home screen" is hidden below the share popup</li>
+							<li>Standalone and in-browser not sharing data</li>
 						</ul>
 					</div>
 					<div class="col col--small">
@@ -414,7 +432,6 @@
 			</section>
 
 			<section>
-				<h4>Working offline. (Service worker Cache API)</h4>
 				<aside class="browsers-support browsers-support--sticky">
 					<h4 class="browsers-support__group-title browsers-support__group-title--span-2">Android</h4>
 					<ul class="browsers-support-list">
@@ -455,18 +472,25 @@
 					</ul>
 				</aside>
 				<section>
-					<h4>Android</h4>
-				</section>
-				<section>
-					<h4>iOS</h4>
-				</section>
-				<section>
-					<h4>Desktop</h4>
+					<div class="col col--large">
+						<h3>Working offline <br>(Service worker Cache API)</h3>
+						<ul>
+							<li>Service worker and Cache API are well supported as of today</li>
+							<li>For Safari, caches that do not get opened after a few weeks will be removed</li>
+						</ul>
+					</div>
+					<div class="col col--small">
+						<div class="mobile-mockup">
+							<video loop>
+								<source src="videos/offline.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
 				</section>
 			</section>
 
 			<section>
-				<h4>Push notification (Service Worker Push API)</h4>
+				<h3>Push notification (Web Push API)</h3>
 				<aside class="browsers-support browsers-support--sticky">
 					<h4 class="browsers-support__group-title browsers-support__group-title--span-2">Android</h4>
 					<ul class="browsers-support-list">
@@ -507,18 +531,19 @@
 					</ul>
 				</aside>
 				<section>
-					<h4>Android</h4>
-				</section>
-				<section>
-					<h4>iOS</h4>
-				</section>
-				<section>
-					<h4>Desktop</h4>
-					<p>Full browser must be running to receive push notification</p>
+					<div class="col" style="width: 30%">
+						<div class="spacer-small"></div>
+						<p>Safari / Webkit is the only browser doesn't support push notification yet</p>
+					</div>
+					<div class="col" style="width: 68%">
+						<video>
+							<source src="videos/push-notification.mp4" type="video/mp4">
+						</video>
+					</div>
 				</section>
 			</section>
 			<section>
-				<h4>Service Worker Background Sync API</h4>
+				<h3>Service Worker Background Sync API</h3>
 				<aside class="browsers-support browsers-support--sticky">
 					<h4 class="browsers-support__group-title browsers-support__group-title--span-2">Android</h4>
 					<ul class="browsers-support-list">
@@ -559,18 +584,22 @@
 					</ul>
 				</aside>
 				<section>
-					<h4>Android</h4>
-				</section>
-				<section>
-					<h4>iOS</h4>
-				</section>
-				<section>
-					<h4>Desktop</h4>
+					<div class="col col--large">
+						<div class="spacer-small"></div>
+						<ul>
+							<li>Background Sync schedules data sending in the background, even when tab is closed.</li>
+							<li>Only Chrome-base browser support it for now</li>
+						</ul>
+					</div>
+					<div class="col col--small">
+						<div class="spacer-small"></div>
+						<img src="img/background-sync.png" alt="">
+					</div>
 				</section>
 			</section>
 
 			<section>
-				<h4>Web Share API</h4>
+				<h3 style="width: 65%">Web Share API</h3>
 				<aside class="browsers-support browsers-support--sticky">
 					<h4 class="browsers-support__group-title browsers-support__group-title--span-2">Android</h4>
 					<ul class="browsers-support-list">
@@ -611,19 +640,43 @@
 					</ul>
 				</aside>
 				<section>
-					<h4>Android</h4>
+					<div class="col col--large">
+						<div class="spacer-small"></div>
+						<h4>Android</h4>
+						<ul>
+							<li>Only Chrome on Android support Web Share API</li>
+							<li>The overlay share panel is native and provided by the OS</li>
+						</ul>
+					</div>
+					<div class="col col--small">
+						<div class="mobile-mockup">
+							<img src="img/share-android-1.png" alt="">
+							<img class="fragment" src="img/share-android-2.png" alt="">
+						</div>
+					</div>
 				</section>
 				<section>
-					<h4>iOS</h4>
+					<div class="col col--large">
+						<div class="spacer-small"></div>
+						<h4>iOS</h4>
+						<ul>
+							<li>iOS Safari support Web Share api since 12.2</li>
+						</ul>
+					</div>
+					<div class="col col--small">
+						<div class="mobile-mockup mobile-mockup--iphone">
+							<img src="img/share-ios-1.png" alt="">
+							<img class="fragment" src="img/share-ios-2.png" alt="">
+						</div>
+					</div>
 				</section>
 				<section>
-
-					<div class="col col">
+					<div class="col">
 						<div class="spacer-small"></div>
 						<h4>Desktop</h4>
 						<p>Only Safari on macOS support this feature.</p>
 					</div>
-					<div class="col col">
+					<div class="col">
 						<video loop>
 							<source src="videos/webshare-safari-desktop.mov" type="video/quicktime">
 							<source src="videos/webshare-safari-desktop.mp4" type="video/mp4">
@@ -633,7 +686,6 @@
 			</section>
 
 			<section>
-				<h4>Credential Management API</h4>
 				<aside class="browsers-support browsers-support--sticky">
 					<h4 class="browsers-support__group-title browsers-support__group-title--span-2">Android</h4>
 					<ul class="browsers-support-list">
@@ -674,17 +726,24 @@
 					</ul>
 				</aside>
 				<section>
-					<h4>Android</h4>
-				</section>
-				<section>
-					<h4>iOS</h4>
-				</section>
-				<section>
-					<h4>Desktop</h4>
+					<div class="col col--large">
+						<h3>Credential Management API</h3>
+						<ul>
+							<li>Users can choose an account in a native account chooser</li>
+							<li>User's credentials can be sync with different devices</li>
+							<li>Auto sign in user even if their session has expired</li>
+						</ul>
+					</div>
+					<div class="col col--small">
+						<div class="mobile-mockup" style="height: 803px">
+							<video loop>
+								<source src="videos/credential-management.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section>
-				<h4>Web Authentication API</h4>
 				<aside class="browsers-support browsers-support--sticky">
 					<h4 class="browsers-support__group-title browsers-support__group-title--span-2">Android</h4>
 					<ul class="browsers-support-list">
@@ -725,19 +784,26 @@
 					</ul>
 				</aside>
 				<section>
-					<h4>Android</h4>
-				</section>
-				<section>
-					<h4>iOS</h4>
-				</section>
-				<section>
-					<h4>Desktop</h4>
-					<p>Currently, all desktop browsers only support authentication with USB key</p>
+					<div class="col col--large">
+						<h3>Web Authentication API</h3>
+						<ul>
+							<li>WebAuthn is an extension of Credential Management API</li>
+							<li>The API allows servers to register and authenticate users using <strong>public key cryptography</strong> instead of a password.</li>
+							<li>Currently, desktop browsers only support authentication with USB key</li>
+						</ul>
+					</div>
+					<div class="col col--small">
+						<div class="mobile-mockup">
+							<video loop>
+								<source src="videos/web-authentication.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
 				</section>
 			</section>
 
 			<section>
-				<h4>Payment Request API</h4>
+				<h3 style="width: 70%">Payment Request API</h3>
 				<aside class="browsers-support browsers-support--sticky">
 					<h4 class="browsers-support__group-title browsers-support__group-title--span-2">Android</h4>
 					<ul class="browsers-support-list">
@@ -778,11 +844,37 @@
 					</ul>
 				</aside>
 				<section>
-					<h4>Safari</h4>
-					<p>Safari only support Apple Pay</p>
+					<div class="col col--large">
+						<div class="spacer-small"></div>
+						<h4>Chrome & Chrome-based browser</h4>
+						<ul>
+							<li>Support for credit card</li>
+							<li>Support Android pay where it is available</li>
+						</ul>
+					</div>
+					<div class="col col--small">
+						<div class="mobile-mockup">
+							<video loop>
+								<source src="videos/payment-request.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+
 				</section>
 				<section>
-					<h4>Android</h4>
+					<div class="col col--large">
+						<div class="spacer-small"></div>
+						<h4>Safari (iOS & macOS)</h4>
+						<ul>
+							<li>Safari only support Apple Pay right now.</li>
+						</ul>
+					</div>
+					<div class="col col--small">
+						<div class="mobile-mockup mobile-mockup--iphone">
+							<img src="img/apple-pay-1.png" alt="">
+							<img src="img/apple-pay-2.png" alt="" class="fragment">
+						</div>
+					</div>
 				</section>
 			</section>
 
@@ -861,6 +953,8 @@
 				</div>
 			</section>
 
+			<!--
+				{ Hide this section for now. May be used for other occasions. }
 			<section data-background="img/mobile-screen.jpg" class="dark-slide title-slide">
 				<h3>Closing the</h3>
 				<h2>App Gap</h2>
@@ -872,12 +966,25 @@
 				<a href="https://speakerdeck.com/webcore/coming-up-in-chrome-project-fugu-and-its-new-web-apis">Slides</a>
 				<a href="https://www.chromium.org/teams/web-capabilities-fugu">Learn more</a>
 			</section>
+			-->
 
 			<section data-background="img/mobile-on-hand.jpg" class="dark-slide title-slide">
 				<h2>The End</h2>
 				<h3>Thank You</h3>
-				<footer class="footnote">
-					Vue Shop source code (CC BY 4.0): <a href="https://github.com/trongthanh/vuejs-firebase-shopping-cart">https://github.com/trongthanh/vuejs-firebase-shopping-cart</a>
+				<footer>
+					<p>Link to this slide: <a href="http://bit.ly/vws-pwa2019"><strong>bit.ly/vws-pwa2019</strong></a></p>
+					<p><a href="https://int3ractive.com">int3ractive.com</a> -
+					<a href="https://facebook.com/trongthanh" target="_blank">
+						<svg class="icon icon-facebook2"><use xlink:href="#icon-facebook2"></use></svg>
+					</a>
+					<a href="https://twitter.com/trongthanh" target="_blank">
+						<svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+					</a>
+					<a href="https://github.com/trongthanh" target="_blank">
+						<svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+						: @trongthanh
+					</a>
+					<!-- Vue Shop source code (CC BY 4.0): <a href="https://github.com/trongthanh/vuejs-firebase-shopping-cart">https://github.com/trongthanh/vuejs-firebase-shopping-cart</a> -->
 				</footer>
 			</section>
 		</div>
