@@ -398,6 +398,7 @@
 						<div class="spacer-small"></div>
 						<h4>iOS 13</h4>
 						<ul>
+							<li>First SW support in Safari 11.3</li>
 							<li>Not support all manifest.json</li>
 							<li>No native install banner</li>
 							<li>"Add to home screen" is hidden below the share popup</li>
@@ -879,7 +880,7 @@
 
 			<section>
 				<section data-background="img/mobile-screen.jpg" class="dark-slide title-slide">
-					<h3>What's Coming For</h3>
+					<h3>What's Next For</h3>
 					<h2>PWA?</h2>
 				</section>
 
@@ -901,7 +902,12 @@
 
 				<section>
 					<div class="col col--large">
-						<p>To display web contents inside an Android app, there is in-app web browser ativity</p>
+						<ul>
+							<li>To display web contents inside an Android app, developer can use WebView or the new <strong>Chrome Custom Tab</strong> activity</li>
+							<li class="fragment">Chrome Custom Tab share browser data with Chrome</li>
+							<li class="fragment">TWA is your PWA inside a full-screen Chrome Custom Tab activity</li>
+							<li class="fragment">Your PWA domain must be verified by CCT via <strong>Digital Asset Links</strong></li>
+						</ul>
 					</div>
 					<div class="col col--small">
 						<div class="mobile-mockup">
@@ -909,20 +915,6 @@
 						</div>
 					</div>
 				</section>
-
-				<section>
-					<h3>What TWA enable?</h3>
-					<ul>
-						<li>Seamles web content inside Android app</li>
-						<li>Publish PWA to Google Play Store</li>
-						<li>Implemen instant app with web content</li>
-					</ul>
-				</section>
-
-				<section>
-					Quick how to
-				</section>
-
 			</section>
 
 			<section>
@@ -933,7 +925,7 @@
 						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 						vs.
 						&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;
-						Phonegap (Hybrid App)
+						Hybrid / Native Apps
 					</strong>
 				</p>
 				<div class="col">
@@ -941,14 +933,37 @@
 						<li>Hosted at trusted domain</li>
 						<li>Always fresh</li>
 						<li>Just web app with Web API</li>
+						<li>Can be extended by native activity</li>
 					</ul>
 				</div>
 				<div class="col">
 					<ul>
-						<li>Bundled inside app's package</li>
+						<li>Bundled inside app's apk</li>
 						<li>Update via app store or code push</li>
-						<li>Interact with OS via native shell</li>
+						<li>Has access to native OS API</li>
+						<li>Load web content via WebView</li>
 					</ul>
+				</div>
+			</section>
+
+			<section>
+				<div class="col col--large">
+				<h3>Why TWA the App Store?</h3>
+					<ul>
+						<li>Better discovery via the web store</li>
+						<li>Monetize the app</li>
+						<li>App Shortcuts and other deep integrations with the OS</li>
+						<li>Be re-installed after restore on new phone</li>
+						<li>Instant app with web content</li>
+						<li>Your PWA are now available <strong>everywhere</strong></li>
+					</ul>
+				</div>
+				<div class="col col--small">
+					<div class="mobile-mockup">
+						<video loop>
+							<source src="videos/twa.mp4" type="video/mp4">
+						</video>
+					</div>
 				</div>
 			</section>
 
